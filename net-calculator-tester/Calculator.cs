@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace net_calculator_tester
 {
-    internal class Calculator
+    static public class Calculator
     {
-        float Add(float num1, float num2)
+        static public float Add(float num1, float num2)
         {
             return num1 + num2;
         }
-        float Subtract(float num1, float num2)
+        static public float Subtract(float num1, float num2)
         {
             return num1 - num2;
         }
-        float Multiply(float num1, float num2)
+        static public float Multiply(float num1, float num2)
         {
             return num1 * num2;
         }
 
-        float Divide(float num1, float num2)
+        static public float Divide(float num1, float num2)
         {
             return num1 / num2;
         }

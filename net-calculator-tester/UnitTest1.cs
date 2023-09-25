@@ -8,9 +8,11 @@ namespace net_calculator_tester
         }
 
         [Test]
-        public void Test1()
+        public void TestAddTwoNumbers([Values(8)] float num1, [Values(2)] float num2)
         {
-            Assert.Pass();
+           float result = Calculator.Add(num1, num2);
+
+            Assert.AreEqual(10, result);
         }
     }
 }
