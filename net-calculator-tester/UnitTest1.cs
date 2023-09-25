@@ -15,6 +15,7 @@ namespace net_calculator_tester
             Assert.AreEqual(10, result);
         }
 
+        [Test]
         public void TestSubtractTwoNumbers([Values(8)] float num1, [Values(2)] float num2)
         {
             float result = Calculator.Subtract(num1, num2);
@@ -22,11 +23,20 @@ namespace net_calculator_tester
             Assert.AreEqual(6, result);
         }
 
+        [Test]
         public void TestMultiplyTwoNumbers([Values(8)] float num1, [Values(2)] float num2)
         {
             float result = Calculator.Multiply(num1, num2);
 
             Assert.AreEqual(16, result);
+        }
+
+        [Test]
+        public void TestDivideTwoNumbers([Values(8)] float num1, [Values(2)] float num2)
+        {
+            float result = Calculator.Divide(num1, num2);
+
+            Assert.AreEqual(4, result);
         }
     }
 }
