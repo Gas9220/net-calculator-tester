@@ -12,7 +12,7 @@ namespace net_calculator_tester
         {
            float result = Calculator.Add(num1, num2);
 
-            Assert.AreEqual(10, result);
+            Assert.AreEqual(10, result, "Result should be 10");
         }
 
         [Test]
@@ -20,7 +20,7 @@ namespace net_calculator_tester
         {
             float result = Calculator.Subtract(num1, num2);
 
-            Assert.AreEqual(6, result);
+            Assert.AreEqual(6, result, "Result should be 6");
         }
 
         [Test]
@@ -28,7 +28,7 @@ namespace net_calculator_tester
         {
             float result = Calculator.Multiply(num1, num2);
 
-            Assert.AreEqual(16, result);
+            Assert.AreEqual(16, result, "Result should be 16");
         }
 
         [Test]
@@ -36,7 +36,7 @@ namespace net_calculator_tester
         {
             float result = Calculator.Divide(num1, num2);
 
-            Assert.AreEqual(4, result);
+            Assert.AreEqual(4, result, "Result should be 4");
         }
     }
 }
