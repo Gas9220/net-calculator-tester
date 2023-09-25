@@ -14,5 +14,12 @@ namespace net_calculator_tester
 
             Assert.AreEqual(10, result);
         }
+
+        public void TestSubtractTwoNumbers([Values(8)] float num1, [Values(2)] float num2)
+        {
+            float result = Calculator.Subtract(num1, num2);
+
+            Assert.AreEqual(6, result);
+        }
     }
 }
