@@ -21,5 +21,12 @@ namespace net_calculator_tester
 
             Assert.AreEqual(6, result);
         }
+
+        public void TestMultiplyTwoNumbers([Values(8)] float num1, [Values(2)] float num2)
+        {
+            float result = Calculator.Multiply(num1, num2);
+
+            Assert.AreEqual(16, result);
+        }
     }
 }
